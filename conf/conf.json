@@ -1,0 +1,26 @@
+{
+  "uri": "http://api.bp.antpool.com",
+  "method": "POST",
+  "rpc_list": [
+    {
+      "api": "/v1/chain/get_info",
+      "body": {}
+    },
+    {
+      "api": "/v1/chain/get_table_rows",
+      "body": {"code":"eosio","scope":"eosio","json":true,"table_key":"","table":"global"}
+    },
+    {
+      "api": "/v1/chain/get_table_rows",
+      "body": {"code":"eosio","scope":"eosio","json":true,"table_key":"","table":"rammarket"}
+    },
+    {
+      "api": "/v1/chain/get_table_rows",
+      "body": {"limit":100,"code":"eosio","scope":"eosio","json":true,"table_key":"","table":"producers"}
+    },
+    {
+      "api": "/v1/chain/get_currency_stats",
+      "body": {"symbol":"EOS","code":"eosio.token"}
+    }
+  ]
+}
