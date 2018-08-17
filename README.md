@@ -9,7 +9,7 @@ Using [OpenResty](https://openresty.org/) impl gateway
 
 ### Install [Openresty](https://openresty.org/en/installation.html)
 
-### Run EOS RPC Gateway
+### Run Gateway
 ```
 sudo nginx -p `pwd`/ -c conf/nginx.conf
 ```
@@ -31,7 +31,7 @@ curl -d '{"account_name":"b1"}'  http://127.0.0.1/v1/chain/get_account |jq
 curl -d '{"block_num_or_id":"10000"}'  http://127.0.0.1/v1/chain/get_block | jq
 ```
 
-## nginx.conf
+## [nginx.conf](conf/nginx.conf)
 ```
 #init script: load config
 init_by_lua_file lua/init.lua;
